@@ -1,0 +1,23 @@
+{
+  "name": "budget-api",
+  "version": "1.0.0",
+  "description": "REST API for Budget Planner App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budget-planner/budget-api.git"
+  },
+  "author": "Craig Schwartz <craigschwartz525@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/budget-planner/budget-api/issues"
+  },
+  "homepage": "https://github.com/budget-planner/budget-api#readme",
+  "dependencies": {
+    "express": "4.14.0",
+    "mysql": "2.11.1"
+  }
+}
