@@ -10,16 +10,52 @@ app.listen(config.port, function() {
 // Get budget by budgetId
 app.get('/budget/:budgetId', function(req, res) {
 
-    var data = {};
+    var data = {
+        id: 1,
+        name: 'Personal',
+        lineItems: [
+            {
+                id: 1,
+                name: 'Pay Check',
+                type: 1,
+                amount: 2750.00,
+                recurring: true,
+                term: 'Monthly'
+            },
+            {
+                id: 2,
+                name: 'Rent',
+                type: -1,
+                amount: 1400.00,
+                recurring: true,
+                term: 'Monthly'
+            },
+            {
+                id: 2,
+                name: 'Groceries',
+                type: -1,
+                amount: 100.00,
+                recurring: true,
+                term: 'Weekly'
+            },
+            {
+                id: 2,
+                name: 'Christmas Gifts',
+                type: -1,
+                amount: 250.00,
+                recurring: false
+            }
+        ]
+    };
 
     res.json(data);
 
 });
 
 // Get all budgets for a userId
-app.get('/budget/:userId', function(req, res) {
+app.get('/budgets/:userId', function(req, res) {
 
-    var data = {};
+    var data = [];
 
     res.json(data);
 
